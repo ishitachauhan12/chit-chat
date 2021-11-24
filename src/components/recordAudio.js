@@ -33,7 +33,10 @@ export default async function recordAudio() {
               audioName,
             });
           });
+          mediaRecorder.stop();
         });
+
+        
       };
 
       resolve({start,stop});
